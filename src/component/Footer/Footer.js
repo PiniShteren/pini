@@ -1,6 +1,6 @@
 import React from 'react';
 import "./footer.css";
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import Face from "../images/facebook.svg";
 import Whats from "../images/whatsapp.svg";
 import ReactWhatsapp from 'react-whatsapp';
@@ -8,6 +8,7 @@ import Phone from "../images/phone.svg"
 
 
 export default function Footer() {
+    const history = useHistory();
     return (
         <div className="footer">
             <div className="options-footer">
@@ -35,14 +36,16 @@ export default function Footer() {
                             <img src={Whats} width="25em" />
                         </ReactWhatsapp>
                     </div>
-                    <div>
+                    <div className="phone">
                         <a id="link-phone" href="tel:0544936366">
                             <img src={Phone} width="25em" />
                         </a>
                     </div>
                 </div>
             </div>
-            <div className="design">
+            <div className="design" onClick={() => {
+                history.push("/")
+            }}>
                 <p className="footer-p"> design by Pini Shteren &copy;</p>
             </div>
         </div>

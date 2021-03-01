@@ -35,13 +35,13 @@ export default function Content() {
                         <ReactWhatsapp className="whats" number="+972544936366" >
                             <div className="details-child">
                                 972-054-493-6366+
-                        <img src={WhatsApp} alt="img" width="19vh" />
+                        <img src={WhatsApp} alt="img" width="28em" />
                             </div>
                         </ReactWhatsapp>
                         <a id="link-phone" href="tel:0544936366">
                             <div className="details-child">
                                 054-493-6366
-                        <img src={Phone} width="16vh" style={{ marginLeft: '0.4vh' }} />
+                        <img src={Phone} width="28em" style={{ marginLeft: '0.4vh' }} />
                             </div>
                         </a>
                     </div>

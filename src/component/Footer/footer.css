@@ -2,8 +2,9 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	max-height: 10em;
+	/* max-height: 10em; */
 	background-color: rgba(0, 136, 72, 0.932);
+	border-top: 2px solid black;
 }
 .options-footer {
 	width: 90%;
@@ -12,7 +13,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding: 5vh 5vh 1vh 5vh;
+	padding: 2em;
 }
 #link-footer {
 	text-decoration: none;
@@ -43,9 +44,23 @@ li {
 .facebook:hover {
 	transform: scale(1.1, 1.1);
 }
+.design {
+	background-color: rgba(0, 124, 66, 0.932);
+}
 .footer-p {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	margin: 2vh;
 	color: white;
 	font-size: 2.5vh;
 }
+/* .facebook,
+.whatsapp {
+	padding: 0.5em 0.7em 0.5em 0.7em;
+	background-color: rgb(15, 124, 64);
+	border-radius: 100%;
+}
+.phone {
+	padding: 0.6em;
+	background-color: rgb(15, 124, 64);
+	border-radius: 100%;
+} */

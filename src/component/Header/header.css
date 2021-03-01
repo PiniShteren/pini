@@ -65,12 +65,13 @@
 	background-color: rgba(56, 56, 56, 0.911);
 }
 .nav-header {
-	width: 80%;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	/* margin: 0.5em 3em 0.5em 1em; */
 }
 #link-header {
+	font-size: 1.2em;
 	text-decoration: none;
 	font-weight: bold;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -87,7 +88,7 @@
 	background-color: rgba(95, 95, 95, 0.911);
 }
 @media only screen and (min-width: 1000px) {
-	.nav-header {
-		width: 50%;
+	#link-header {
+		padding: 0.5em 4em 0.5em 4em;
 	}
 }

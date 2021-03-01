@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import "./App.css";
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import { __RouterContext } from 'react-router';
 import { useTransition, animated } from 'react-spring';
 
@@ -11,10 +11,12 @@ import Content from "./component/Content/Content";
 import About from './component/About/About';
 import Footer from "./component/Footer/Footer";
 
+
 import data from "./component/data/doors.json";
 const dataArr = data.catalog;
 
 function App() {
+
   const [scroll, setScroll] = useState(0);
   const [i, setI] = useState(0);
   const openProduct = (index) => {
@@ -23,6 +25,7 @@ function App() {
   const sendScroll = (scrolling) => {
     setScroll(scrolling);
   }
+
 
   const { location } = useContext(__RouterContext);
   const transitions = useTransition(location, location => location.pathname, {
