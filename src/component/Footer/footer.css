@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	/* max-height: 10em; */
+	max-height: 10em;
 	background-color: rgba(0, 136, 72, 0.932);
 	border-top: 2px solid black;
 }

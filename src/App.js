@@ -29,9 +29,10 @@ function App() {
 
   const { location } = useContext(__RouterContext);
   const transitions = useTransition(location, location => location.pathname, {
-    from: { opacity: 0 },
+    trail: 10,
+    from: { opacity: 0.2 },
     enter: { opacity: 1 },
-    leave: { opacity: 0 }
+    leave: { opacity: 0.2 }
   })
   return (
     <div className="App">
