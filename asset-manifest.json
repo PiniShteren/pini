@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/pini/static/css/main.185cdbc0.chunk.css",
-    "main.js": "/pini/static/js/main.584c0c5f.chunk.js",
-    "main.js.map": "/pini/static/js/main.584c0c5f.chunk.js.map",
+    "main.css": "/pini/static/css/main.3bdcd81d.chunk.css",
+    "main.js": "/pini/static/js/main.f46b5b18.chunk.js",
+    "main.js.map": "/pini/static/js/main.f46b5b18.chunk.js.map",
     "runtime-main.js": "/pini/static/js/runtime-main.ee69fc1f.js",
     "runtime-main.js.map": "/pini/static/js/runtime-main.ee69fc1f.js.map",
     "static/js/2.ed2f63ed.chunk.js": "/pini/static/js/2.ed2f63ed.chunk.js",
     "static/js/2.ed2f63ed.chunk.js.map": "/pini/static/js/2.ed2f63ed.chunk.js.map",
     "index.html": "/pini/index.html",
-    "static/css/main.185cdbc0.chunk.css.map": "/pini/static/css/main.185cdbc0.chunk.css.map",
+    "static/css/main.3bdcd81d.chunk.css.map": "/pini/static/css/main.3bdcd81d.chunk.css.map",
     "static/js/2.ed2f63ed.chunk.js.LICENSE.txt": "/pini/static/js/2.ed2f63ed.chunk.js.LICENSE.txt",
     "static/media/ElA.png": "/pini/static/media/ElA.7068eaa5.png",
     "static/media/ElB.png": "/pini/static/media/ElB.67958620.png",
@@ -34,7 +34,7 @@
   "entrypoints": [
     "static/js/runtime-main.ee69fc1f.js",
     "static/js/2.ed2f63ed.chunk.js",
-    "static/css/main.185cdbc0.chunk.css",
-    "static/js/main.584c0c5f.chunk.js"
+    "static/css/main.3bdcd81d.chunk.css",
+    "static/js/main.f46b5b18.chunk.js"
   ]
 }
