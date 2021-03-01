@@ -26,7 +26,7 @@ export default function Footer() {
                 <div className="icons-footer">
                     <div className="facebook">
                         <a href="https://www.facebook.com/pini859">
-                            <img src={Face} width="25vh" />
+                            <img src={Face} width="35em" />
                         </a>
                     </div>
                     <div className="whatsapp">

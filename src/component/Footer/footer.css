@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	background-color: rgb(165, 165, 165);
+	background-color: black;
 }
 .options-footer {
 	width: 80%;
@@ -15,7 +15,7 @@
 }
 #link-footer {
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #link-footer:hover {
@@ -23,6 +23,7 @@
 }
 li {
 	text-align: right;
+	/* list-style-type: ; */
 }
 .icons-footer {
 	display: flex;
@@ -44,5 +45,6 @@ li {
 .footer-p {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	margin: 2vh;
+	color: white;
 	font-size: 2.5vh;
 }

@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import "./App.css";
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { __RouterContext } from 'react-router';
+import { useTransition, animated } from 'react-spring';
 
 import Header from "./component/Header/Header";
 import Home from "./component/Home/Home";
@@ -22,28 +24,39 @@ function App() {
     setScroll(scrolling);
   }
 
+  const { location } = useContext(__RouterContext);
+  const transitions = useTransition(location, location => location.pathname, {
+    from: { opacity: 0, transform: `translateX(100px)` },
+    enter: { opacity: 1, transform: `translateX(0px)` },
+    leave: { opacity: 0, transform: `translateX(-100px)` }
+  })
   return (
     <div className="App">
-      <Router>
-        <Header />
-        <div className="body">
-          <Switch>
-            <Route exact path="/" component={() => {
-              return <Home scroll={scroll} sendScroll={sendScroll} openProduct={openProduct} />
-            }} />
-            <Route path="/productView" component={() => {
-              return <ProductView dataArr={dataArr[i]} />
-            }} />
-            <Route path="/content" component={() => {
-              return <Content />
-            }} />
-            <Route path="/about" component={() => {
-              return <About />
-            }} />
-          </Switch>
-        </div>
-        <Footer />
-      </Router>
+
+      <Header />
+      <div className="body">
+        {transitions.map(({ item, props, key }) => (
+          <animated.div key={key} style={props}>
+            <Switch location={item}>
+              <Route exact path="/" component={() => {
+                return <Home scroll={scroll} sendScroll={sendScroll} openProduct={openProduct} />
+              }} />
+              <Route path="/productView" component={() => {
+                return <ProductView dataArr={dataArr[i]} />
+              }} />
+              <Route path="/content" component={() => {
+                return <Content />
+              }} />
+              <Route path="/about" component={() => {
+                return <About />
+              }} />
+            </Switch>
+
+          </animated.div>
+        ))}
+      </div>
+      <Footer />
+
     </div>
   )
 }
