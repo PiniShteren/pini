@@ -1,43 +1,54 @@
 .header {
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.849);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	/* padding: 1%; */
+	/* border-bottom: 2px solid rgba(0, 0, 0, 0.644); */
 	/* box-shadow: 0px 0px 10px gray, 0 0 10px; */
-	z-index: 1;
+	/* z-index: 1; */
 }
 .top {
 	width: 100%;
-	background-color: white;
-	height: 8vh;
+	/* background-color: white; */
+	height: 15vh;
 }
 .logo {
-	position: relative;
-	background-color: black;
+	/* position: relative; */
+	background-color: rgba(63, 63, 63, 0.952);
+	border: 5px solid rgba(255, 255, 255, 0.719);
 	display: flex;
 	height: 5em;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 	border-radius: 2vh;
-	border: 5px solid white;
+	box-shadow: 0px 5px 5px gray, 0 0 5px;
+	/* border: 5px solid rgb(202, 201, 201); */
 	margin: 0 auto;
 	width: 40%;
-	color: white;
+	/* z-index: 1; */
 }
 #logo-1 {
+	color: white;
 	font-size: 2em;
 	line-height: 1;
 	font-weight: bold;
-	font-family: cursive;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	transform: scale(1.5, 1.5);
-	text-shadow: 0px 2px 1px gray, -2px 2px 1px grey;
+	text-shadow: 0px 2px 1px rgb(42, 57, 107), -2px 2px 1px rgb(42, 57, 107);
 }
 #logo-2 {
+	text-shadow: 0px 2px 1px rgb(42, 57, 107), -2px 2px 1px rgb(42, 57, 107);
+	color: white;
 	font-weight: bold;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contect-icon-header {
+	display: flex;
+	align-items: center;
+	padding: 0em 1em 0em 1em;
 }
 .contect-icon-header:hover {
 	transform: scale(1.1, 1.1);
@@ -47,27 +58,29 @@
 	display: flex;
 	justify-content: center;
 	align-items: stretch;
-	/* padding-top: 5%; */
+	background-color: rgba(56, 56, 56, 0.911);
 }
 .nav-header {
-	width: 70%;
+	width: 80%;
 	display: flex;
-	justify-content: space-between;
-	margin: 3em 3em 1em 3em;
+	justify-content: center;
+	/* margin: 0.5em 3em 0.5em 1em; */
 }
 #link-header {
 	text-decoration: none;
 	font-weight: bold;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	color: white;
-	padding: 0vh 1vh 0vh 1vh;
+	padding: 0.5em 1em 0.5em 1em;
 }
 #link-header:hover {
-	transform: scale(1.1, 1.1);
+	/* transform: scale(1.1, 1.1); */
+	background-color: rgba(95, 95, 95, 0.911);
 }
 .active {
 	/* padding-bottom: 1em; */
 	border-bottom: 2px solid white;
+	background-color: rgba(95, 95, 95, 0.911);
 }
 @media only screen and (min-width: 1000px) {
 	.nav-header {

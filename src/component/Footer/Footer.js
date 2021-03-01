@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Face from "../images/facebook.svg";
 import Whats from "../images/whatsapp.svg";
 import ReactWhatsapp from 'react-whatsapp';
+import Phone from "../images/phone.svg"
 
 
 export default function Footer() {
@@ -26,13 +27,18 @@ export default function Footer() {
                 <div className="icons-footer">
                     <div className="facebook">
                         <a href="https://www.facebook.com/pini859">
-                            <img src={Face} width="35em" />
+                            <img src={Face} width="25em" />
                         </a>
                     </div>
                     <div className="whatsapp">
                         <ReactWhatsapp id="react-whatsapp" number="+972544936366">
-                            <img src={Whats} width="25vh" />
+                            <img src={Whats} width="25em" />
                         </ReactWhatsapp>
+                    </div>
+                    <div>
+                        <a id="link-phone" href="tel:0544936366">
+                            <img src={Phone} width="25em" />
+                        </a>
                     </div>
                 </div>
             </div>
