@@ -1,6 +1,6 @@
 import React from 'react';
 import "./footer.css";
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Face from "../images/facebook.svg";
 import Whats from "../images/whatsapp.svg";
 import ReactWhatsapp from 'react-whatsapp';
@@ -14,13 +14,13 @@ export default function Footer() {
                 <div className="nav-footer">
                     <ul>
                         <li>
-                            <NavLink exact to="/" id="link-footer" onClick={() => { window.scroll(0, 0) }}>דף הבית</NavLink>
+                            <Link exact to="/" id="link-footer" onClick={() => { window.scroll(0, 0) }}>דף הבית</Link>
                         </li>
                         <li>
-                            <NavLink to="/content" id="link-footer">יצירת קשר</NavLink>
+                            <Link to="/content" id="link-footer">יצירת קשר</Link>
                         </li>
                         <li>
-                            <NavLink to="about" id="link-footer">אודות</NavLink>
+                            <Link to="about" id="link-footer">אודות</Link>
                         </li>
                     </ul>
                 </div>

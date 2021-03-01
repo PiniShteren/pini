@@ -1,5 +1,5 @@
 .header {
-	background-color: rgba(0, 0, 0, 0.849);
+	background-color: rgba(0, 136, 72, 0.932);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -10,6 +10,8 @@
 	/* z-index: 1; */
 }
 .top {
+	display: flex;
+	align-items: center;
 	width: 100%;
 	/* background-color: white; */
 	height: 15vh;
@@ -24,10 +26,10 @@
 	flex-direction: column;
 	justify-content: center;
 	border-radius: 2vh;
-	box-shadow: 0px 5px 5px gray, 0 0 5px;
+	/* box-shadow: 0px 5px 5px gray, 0 0 5px; */
 	/* border: 5px solid rgb(202, 201, 201); */
 	margin: 0 auto;
-	width: 40%;
+	width: 10em;
 	/* z-index: 1; */
 }
 #logo-1 {
@@ -37,10 +39,12 @@
 	font-weight: bold;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	transform: scale(1.5, 1.5);
-	text-shadow: 0px 2px 1px rgb(42, 57, 107), -2px 2px 1px rgb(42, 57, 107);
+	text-shadow: 0px 2px 1px rgba(0, 136, 72, 0.932),
+		-2px 2px 1px rgba(0, 136, 72, 0.932);
 }
 #logo-2 {
-	text-shadow: 0px 2px 1px rgb(42, 57, 107), -2px 2px 1px rgb(42, 57, 107);
+	text-shadow: 0px 2px 1px rgba(0, 136, 72, 0.932),
+		-2px 2px 1px rgba(0, 136, 72, 0.932);
 	color: white;
 	font-weight: bold;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
