@@ -2,7 +2,6 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	max-height: 10em;
 	background: linear-gradient(
 		to top,
 		rgb(0, 26, 255),
@@ -18,7 +17,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding: 4em 2em 2em 4em;
+	padding: 2em 2em 2em 2em;
 }
 #link-footer {
 	font-weight: bold;
@@ -53,6 +52,7 @@ li {
 }
 .design {
 	background-color: rgba(0, 8, 124, 0.932);
+	position: relative;
 }
 .footer-p {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
