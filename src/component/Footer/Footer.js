@@ -27,19 +27,25 @@ export default function Footer() {
                 </div>
                 <div className="icons-footer">
                     <div className="facebook">
-                        <a href="https://www.facebook.com/pini859">
-                            <img src={Face} width="25em" />
-                        </a>
+                        <button id="facebook">
+                            <a href="https://www.facebook.com/pini859">
+                                <img src={Face} width="25em" />
+                            </a>
+                        </button>
                     </div>
                     <div className="whatsapp">
-                        <ReactWhatsapp id="react-whatsapp" number="+972544936366">
-                            <img src={Whats} width="25em" />
-                        </ReactWhatsapp>
+                        <button id="whatsapp">
+                            <ReactWhatsapp id="react-whatsapp" number="+972544936366">
+                                <img src={Whats} width="25em" />
+                            </ReactWhatsapp>
+                        </button>
                     </div>
                     <div className="phone">
-                        <a id="link-phone" href="tel:0544936366">
-                            <img src={Phone} width="25em" />
-                        </a>
+                        <button id="phone">
+                            <a id="link-phone" href="tel:0544936366">
+                                <img src={Phone} width="25em" />
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div>

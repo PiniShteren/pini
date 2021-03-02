@@ -44,10 +44,9 @@ li {
 	background: none;
 	border: none;
 }
-.whatsapp:hover {
-	transform: scale(1.1, 1.1);
-}
-.facebook:hover {
+.whatsapp:hover,
+.facebook:hover,
+.phone:hover {
 	transform: scale(1.1, 1.1);
 }
 .design {
@@ -60,14 +59,21 @@ li {
 	color: white;
 	font-size: 2.5vh;
 }
-.facebook,
-.whatsapp {
+#facebook,
+#whatsapp {
 	padding: 0.5em 0.7em 0.5em 0.7em;
 	background-color: rgb(252, 252, 252);
 	border-radius: 100%;
+	border: none;
 }
-.phone {
-	padding: 12%;
+#phone {
+	padding: 0.7em;
 	background-color: rgb(255, 255, 255);
 	border-radius: 100%;
+	border: none;
+}
+#facebook:focus,
+#whatsapp:focus,
+#phone:focus {
+	outline: none;
 }
