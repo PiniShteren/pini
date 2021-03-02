@@ -3,7 +3,12 @@
 	justify-content: center;
 	flex-direction: column;
 	max-height: 10em;
-	background-color: rgba(0, 136, 72, 0.932);
+	background: linear-gradient(
+		to top,
+		rgb(0, 26, 255),
+		rgba(0, 0, 255, 0.829),
+		rgba(0, 0, 255, 0.918)
+	);
 	border-top: 2px solid black;
 }
 .options-footer {
@@ -13,9 +18,11 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding: 2em;
+	padding: 4em 2em 2em 4em;
 }
 #link-footer {
+	font-weight: bold;
+	font-size: 1.4em;
 	text-decoration: none;
 	color: rgb(0, 0, 0);
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -45,7 +52,7 @@ li {
 	transform: scale(1.1, 1.1);
 }
 .design {
-	background-color: rgba(0, 124, 66, 0.932);
+	background-color: rgba(0, 8, 124, 0.932);
 }
 .footer-p {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -53,14 +60,14 @@ li {
 	color: white;
 	font-size: 2.5vh;
 }
-/* .facebook,
+.facebook,
 .whatsapp {
 	padding: 0.5em 0.7em 0.5em 0.7em;
-	background-color: rgb(15, 124, 64);
+	background-color: rgb(252, 252, 252);
 	border-radius: 100%;
 }
 .phone {
 	padding: 0.6em;
-	background-color: rgb(15, 124, 64);
+	background-color: rgb(255, 255, 255);
 	border-radius: 100%;
-} */
+}

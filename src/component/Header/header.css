@@ -1,5 +1,10 @@
 .header {
-	background-color: rgba(0, 136, 72, 0.932);
+	background: linear-gradient(
+		to top,
+		rgb(0, 26, 255),
+		rgba(42, 42, 185, 0.829),
+		rgba(0, 0, 255, 0.918)
+	);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -39,12 +44,12 @@
 	font-weight: bold;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	transform: scale(1.5, 1.5);
-	text-shadow: 0px 2px 1px rgba(0, 136, 72, 0.932),
-		-2px 2px 1px rgba(0, 136, 72, 0.932);
+	text-shadow: 0px 2px 1px rgba(0, 43, 136, 0.932),
+		-2px 2px 1px rgba(0, 48, 136, 0.932);
 }
 #logo-2 {
-	text-shadow: 0px 2px 1px rgba(0, 136, 72, 0.932),
-		-2px 2px 1px rgba(0, 136, 72, 0.932);
+	text-shadow: 0px 2px 1px rgba(0, 43, 136, 0.932),
+		-2px 2px 1px rgba(0, 48, 136, 0.932);
 	color: white;
 	font-weight: bold;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
