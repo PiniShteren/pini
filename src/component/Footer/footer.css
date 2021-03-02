@@ -63,13 +63,13 @@ li {
 #whatsapp {
 	padding: 0.5em 0.7em 0.5em 0.7em;
 	background-color: rgb(252, 252, 252);
-	border-radius: 100%;
+	border-radius: 2em;
 	border: none;
 }
 #phone {
 	padding: 0.7em;
 	background-color: rgb(255, 255, 255);
-	border-radius: 100%;
+	border-radius: 2em;
 	border: none;
 }
 #facebook:focus,
