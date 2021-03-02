@@ -3,6 +3,11 @@
 	background: none;
 	border: none;
 	font-size: 1.5em;
+	cursor: pointer;
+}
+#back:focus {
+	outline: none;
+	transform: scaleX(1.1);
 }
 #back img {
 	margin-left: 0.2em;
@@ -14,13 +19,13 @@
 	/* background-color: rgb(73, 73, 73); */
 }
 .product-view-body {
-	background-color: rgb(226, 223, 223);
+	/* background-color: rgb(226, 223, 223); */
 	width: 70%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 1.5em;
-	background-color: rgb(137, 179, 168);
+	background-color: rgb(140, 168, 172);
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #product-view-name {
@@ -40,12 +45,16 @@
 	background-size: contain;
 	width: 55%;
 	height: 25em;
-	margin: 10% 0% 10% 0%;
+	margin: 10% 0% 6% 0%;
 }
 .details {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 2em;
+	padding: 2em 0em 2em 0em;
+	box-shadow: 2px 3px 5px gray, 0 0 5px;
+	background-color: aliceblue;
 }
 #descrip {
 	width: 80%;
@@ -53,7 +62,6 @@
 	/* margin-right: 3vh;/ */
 }
 .product-details {
-	background-color: aliceblue;
 	box-shadow: 2px 3px 5px gray, 0 0 5px;
 	margin: 3vh;
 	width: 80%;

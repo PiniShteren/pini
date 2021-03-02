@@ -13,7 +13,7 @@ function ProductView(props) {
     const [display, setDisplay] = useState("none");
 
 
-    var img = require(`../images/rav-barich/${pImg}.png`).default;
+    var img = require(`../images/doors/${pImg}.png`).default;
 
     const showImg = (flag) => {
         if (flag) {
@@ -30,16 +30,16 @@ function ProductView(props) {
                 <button id="back" onClick={() => {
                     history.push("/");
                 }}> <img src={Right} width="15vh" />חזרה</button>
-                <h3 id="product-view-name">{pName}</h3>
+                <h3 id="product-view-name">דגם - {pName}</h3>
                 <div className="img-product-view" onClick={() => {
                     showImg(true)
                 }} style={{ backgroundImage: `url(${img})` }}></div>
                 <div className="details">
                     <p id="descrip">{pDecription}</p>
-                    <div className="product-details">
+                    {/* <div className="product-details">
                         <h3 style={{ textAlign: "center" }}>מפרט</h3>
                         <span id="head-des">מבנה הדלת:</span> {pStructure}
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="div-img-view" onClick={() => {

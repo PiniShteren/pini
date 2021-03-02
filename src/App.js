@@ -13,7 +13,7 @@ import Footer from "./component/Footer/Footer";
 
 
 import data from "./component/data/doors.json";
-const dataArr = data.catalog;
+const dataArr = data.PANORAMY;
 
 function App() {
 
